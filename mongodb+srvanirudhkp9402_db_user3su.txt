@@ -1,1 +1,0 @@
-mongodb+srv://anirudhkp9402_db_user:3su6LheB5KY5v8U0@ai-breath-analyzer.siqwhjf.mongodb.net/?appName=AI-Breath-Analyzer
