@@ -1,13 +1,11 @@
 const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
+const sensorRoutes = require("./routes/sensorRoutes");
 
 dotenv.config();
 
 const connectDB = require("./config/db");
-
-const sensorRoutes = require("./routes/sensorRoutes");
-const aiRoutes = require("./routes/aiRoutes");
 
 connectDB();
 
@@ -17,7 +15,6 @@ app.use(cors());
 app.use(express.json());
 
 app.use("/api/sensor", sensorRoutes);
-app.use("/api/ai", aiRoutes);
 
 app.get("/", (req, res) => {
   res.send("AI Breath Analyzer Backend Running 🚀");
