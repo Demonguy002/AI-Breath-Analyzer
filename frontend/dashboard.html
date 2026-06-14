@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Breath Analyzer</title>
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <header class="navbar">
+
+            <div class="logo">
+                AI Breath Analyzer
+            </div>
+
+            <div class="user-avatar">
+                👤
+            </div>
+
+        </header>
+
+        <section class="hero-card">
+
+            <h1>Welcome Back 👋</h1>
+
+            <p>
+                Monitor respiratory health using AI-powered analysis.
+            </p>
+
+        </section>
+
+        <section class="device-card">
+
+            <div class="status-row">
+
+                <div>
+                    <h3>Device Status</h3>
+                    <p id="deviceStatus">Connected</p>
+                </div>
+
+                <span class="status-dot"></span>
+
+            </div>
+
+        </section>
+
+        <section class="sensor-grid">
+
+            <div class="sensor-card">
+                <h4>Heart Rate</h4>
+                <p id="heartRate">--</p>
+            </div>
+
+            <div class="sensor-card">
+                <h4>SpO₂</h4>
+                <p id="spo2">--</p>
+            </div>
+
+            <div class="sensor-card">
+                <h4>Temperature</h4>
+                <p id="temperature">--</p>
+            </div>
+
+            <div class="sensor-card">
+                <h4>Humidity</h4>
+                <p id="humidity">--</p>
+            </div>
+
+            <div class="sensor-card full-width">
+                <h4>MQ135 Air Quality</h4>
+                <p id="mq135">--</p>
+            </div>
+
+        </section>
+
+        <section class="action-section">
+
+            <button id="startAnalysisBtn">
+                Start Analysis
+            </button>
+
+        </section>
+
+        <section class="report-section">
+
+            <h3>Latest Analysis</h3>
+
+            <div class="report-card">
+
+                <p>Breath Quality Score</p>
+
+                <h2 id="breathScore">
+                    --
+                </h2>
+
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
